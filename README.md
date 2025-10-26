@@ -37,6 +37,11 @@ Eine App die es ermöglicht, dass an jedem Tisch eine digitale Mitschrift der Er
 
 ### App
  - lokaler Zwischenspeicher für nicht abgeschickte Spiele
-   (JSON: {"user_id": ID; "format" ID; "player_count" number; "id_player_1" ID; "id_player_2" ID; "id_player_3" ID; "id_player_4" ID; "id_player_5" ID; Round_1: {"id_player_1" ID; "id_player_2" ID; "id_player_3" ID; "id_player_4" ID; "points_team_1": number; "player_nt": list of up to 4 numbers; "player_gt": list of up to 4 numbers; finished_first: player_ID}; ...; Bomb_1 {round: number; player: ID; length: number; highcard: str}
-
-
+   (JSON: {"user_id": ID; "time_stamp": date; "format" ID; "player_count" number; "id_player_1" ID; "id_player_2" ID; "id_player_3" ID; "id_player_4" ID; "id_player_5" ID; Round_1: {"id_player_1" ID; "id_player_2" ID; "id_player_3" ID; "id_player_4" ID; "points_team_1": number; "player_nt": list of up to 4 numbers; "player_gt": list of up to 4 numbers; finished_first: player_ID}; ...; Bomb_1 {round: number; player: ID; length: number; highcard: str}
+ - Empfängt Push-Benachrichtigungen, immer wenn ein anderer Spieler ein Ergebnis für ein Spiel mit deiner Beteiligung gepostet hat (Widerspruchsfunktion -> weiterleitung an Admin in WebApp/ Desktop Anwendung)
+ - 
+### Admin Anwendung:
+ -  umfangreicherere Anwendung (Web-App), die das erstellen von Turnieren, die Klärung von Streitfragen, und hier auch das nachträgliche Bearbeiten von Ergebnissen ermöglicht (Spieltelnehmer werden über den Edit per Push benachrichtigt)
+ -  Turniererstellung: Format (1000/ Siegpunkte), Turnierbaum (Zufall, Schweizer System), Spieler hinzufügen/ entfernen, Rundenzahl), anschließend wird eine Tischverteilung erstellt
+ -  Kriterien Tischverteilung: gleicher Partner > Anzahl an 5er Tischen > gleiche Gegner (Checkbox: Turnierleiter immer an 5er-Tisch)
+ -  Erlaubt auch die manuelle Erfassung von Spielen
