@@ -17,3 +17,6 @@ Eine App die es ermöglicht, dass an jedem Tisch eine digitale Mitschrift der Er
  - Newsübersicht: neue Turniere, neue regelmäßige Treffen, ... (optional Push-Up für die gewählten Entfernungskategorien)
  - Detailseiten zu Kalendereinträgen mit Ort, Anfahrtskizze, Beginn, Format, Kosten, Preisen, evtl. Link zur Locationhomepage (Speisekarte), iCalender Export
 
+### Entwurf
+
+![Entwurf](./Entwurf.png)
